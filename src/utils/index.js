@@ -347,7 +347,7 @@ export function hasClass (ele, cls) {
 }
 
 /**
- * Add class to element
+ * 向元素添加类
  * @param {HTMLElement} elm
  * @param {string} cls
  */
