@@ -1,0 +1,5 @@
+<template functional>
+  <div class="app-container">
+    <el-alert :closable="false" title="这里是路由嵌套页面一 1-2-2" type="warning" />
+  </div>
+</template>

@@ -1,0 +1,19 @@
+//sidebar
+$menuText:#fff;//菜单字体颜色
+$menuActiveText:#1997ae;//选中字体颜色
+$subMenuActiveText:#1997ae;//下拉时父级字体颜色
+$menuBg:#304156;//背景颜色
+$menuHover:#263445;//父级hover背景颜色
+$subMenuBg:#1f2d3d;//下拉时背景颜色
+$subMenuHover:#001528;//下拉时hover背景颜色
+$sideBarWidth: 210px;
+:export {
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+    subMenuActiveText: $subMenuActiveText;
+    menuBg: $menuBg;
+    menuHover: $menuHover;
+    subMenuBg: $subMenuBg;
+    subMenuHover: $subMenuHover;
+    sideBarWidth: $sideBarWidth;
+}
