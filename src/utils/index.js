@@ -347,7 +347,7 @@ export function hasClass (ele, cls) {
 }
 
 /**
- * 向元素添加类
+ * 向元素添加class
  * @param {HTMLElement} elm
  * @param {string} cls
  */
@@ -356,7 +356,7 @@ export function addClass (ele, cls) {
 }
 
 /**
- * Remove class from element
+ * 删除元素的class
  * @param {HTMLElement} elm
  * @param {string} cls
  */
