@@ -1,6 +1,9 @@
 ## vue-element-admin
 ##### vue-element-admin 是一个后台前端解决方案，它基于 vue 和 element-ui实现的。数据采用mockjs
 
+##### 直接下载安装 npm install 
+##### 启动 npm run dev
+
 ##### 1.数据看板
 ##### 2.权限设置
 ##### 3.字体图表
