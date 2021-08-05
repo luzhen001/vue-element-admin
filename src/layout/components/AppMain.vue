@@ -32,10 +32,10 @@ export default {
     }
     .hasTagsView {
         .app-main {
-            min-height: calc(100vh - 84px);
+            min-height: calc(100vh - 94px);
         }
         .fixed-header+.app-main {
-            padding-top: 84px;
+            padding-top: 94px;
         }
     }
 </style>

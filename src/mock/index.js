@@ -42,11 +42,11 @@ Mock.mock('/api/login/userInfo','get',() => {
 Mock.mock('/api/copy/list', 'get',{
     code: 0,
     message: '获取数据成功',
-    'result|13':[{
+    'result|20':[{
         id: '@increment',
         uid: '@guid',
         url: '@url',
-        title: '@cword(10)',
+        title: '@cword(30)',
     }]
 })
 

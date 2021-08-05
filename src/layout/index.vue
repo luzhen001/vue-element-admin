@@ -7,7 +7,7 @@
                 <nav-bar />
                 <tags-view v-if="needTagsView" />
             </div>
-            <app-main />
+            <app-main style="border:1px solid red" />
         </div>
     </div>
 </template>

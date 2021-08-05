@@ -144,7 +144,7 @@ export default {
 <style lang="scss" scoped>
     .chart-container{
         width: 100%;
-        height: calc(100vh - 84px);
+        height: calc(100vh - 94px);
         position: relative;
         .chart{
             width: 100%;

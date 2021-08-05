@@ -35,7 +35,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .app-container{
-    height:calc(100vh - 84px);
+    height:calc(100vh - 94px);
     padding: 50px 60px 0px;
     background-color: #e3e3e3;
     .pan-info-roles {

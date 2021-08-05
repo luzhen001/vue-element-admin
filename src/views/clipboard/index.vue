@@ -1,7 +1,7 @@
 <template>
     <div class="app-container">
         <div class="copy-wrap" v-for="item in dataList" :key="item.uid">
-            <el-input v-model="item.uid" placeholder="请填写内容..." class="copy-input" />
+            <el-input v-model="item.title" placeholder="请填写内容..." class="copy-input" />
             <el-button type="primary" icon="el-icon-document" @click="handleCopy(item.uid,$event)">复制</el-button>
         </div>
     </div>
@@ -21,13 +21,18 @@ export default {
     },
     methods: {
         //获取数据
-        getList () {
-            getClipList().then(res => {
-                if (res.code === 0) {
-                    console.log(res);
-                    this.dataList = res.result;
-                }
-            })
+        async getList () {
+            // getClipList().then(res => {
+            //     if (res.code === 0) {
+            //         this.dataList = res.result;
+            //     }
+            // })
+            const res = await getClipList();
+            if(res.code !==0){
+                return this.$message.error('出错了！');
+            }
+            this.dataList = res.result;
+
         },
         //复制
         handleCopy (text, event) {

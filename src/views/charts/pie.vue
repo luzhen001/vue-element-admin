@@ -89,7 +89,7 @@ export default {
     .chart-container{
         width: 100%;
         position: relative;
-        height: calc(100vh - 84px);
+        height: calc(100vh - 94px);
         .chart{
             width: 100%;
             height: 100%;

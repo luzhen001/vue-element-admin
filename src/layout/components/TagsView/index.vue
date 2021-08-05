@@ -199,9 +199,11 @@ export default {
 </script>
 <style lang="scss" scoped>
     .tags-view-container {
-        height: 34px;
+        height: 44px;
         width: 100%;
         background: #f5f5f5;
+        display: flex;
+        align-items: center;
         border-bottom: 1px solid #d8dce5;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 0 3px 0 rgba(0, 0, 0, .04);
         .tags-view-wrapper {
@@ -209,13 +211,12 @@ export default {
                 display: inline-block;
                 position: relative;
                 cursor: pointer;
-                height: 26px;
-                line-height: 26px;
+                height: 32px;
+                line-height: 32px;
                 color: #495060;
                 padding: 0 8px;
-                font-size: 12px;
+                font-size: 13px;
                 margin-left: 5px;
-                margin-top: 4px;
                 background: #fff;
                 border-radius: 3px;
                 border: 1px solid #d8dce5;
@@ -248,7 +249,7 @@ export default {
             position: absolute;
             margin: unset;
             padding: 0;
-            top: 92px;
+            top: 100px;
             z-index: 3000;
             box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .3);
             .trangle_arrow{
@@ -282,15 +283,14 @@ export default {
     .tags-view-wrapper {
         .tags-view-item {
             .el-icon-close {
-                width: 16px;
-                height: 16px;
+                width: 18px;
+                height: 18px;
                 border-radius: 50%;
                 text-align: center;
                 vertical-align: 2px;
                 transform-origin: 100% 50%;
                 transition: all .3s cubic-bezier(.645, .045, .355, 1);
                 &:before {
-                    transform: scale(.8);
                     display: inline-block;
                     vertical-align: -3px;
                 }
