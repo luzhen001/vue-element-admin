@@ -13,17 +13,29 @@
                     <span>选择主题颜色</span>
                     <theme-picker class="drawer-picker" @change="themeChange" />
                 </div> -->
+                <!-- <div class="drawer-item">
+                    <span>显示侧栏</span>
+                    <el-switch class="drawer-switch" v-model="showSideBar" />
+                </div>
                 <div class="drawer-item">
-                    <span>是否开启Tags-View</span>
+                    <span>固定侧栏</span>
+                    <el-switch class="drawer-switch" v-model="fixedSideBar" />
+                </div> -->
+                <div class="drawer-item">
+                    <span>多页签模式</span>
                     <el-switch class="drawer-switch" v-model="showTagsView" />
                 </div>
+                <!-- <div class="drawer-item">
+                    <span>固定多页签</span>
+                    <el-switch class="drawer-switch" v-model="fixedTagsView" />
+                </div> -->
                 <div class="drawer-item">
-                    <span>是否固定Head-Bar</span>
-                    <el-switch class="drawer-switch" v-model="fixedHeader" />
+                    <span>固定Header</span>
+                    <el-switch class="drawer-switch" v-model="fixedHeaderBar" />
                 </div>
                 <div class="drawer-item">
-                    <span>是否显示侧栏Logo</span>
-                    <el-switch class="drawer-switch" v-model="showBarLogo" />
+                    <span>显示侧栏Logo</span>
+                    <el-switch class="drawer-switch" v-model="showSideLogo" />
                 </div>
                 <div class="drawer-item">
                     <span>菜单支持拼音搜索</span>
@@ -53,7 +65,7 @@ export default {
                 this.$store.dispatch('app/setTagsView', val);
             }
         },
-        fixedHeader: {
+        fixedHeaderBar: {
             get() {
                 return this.$store.getters.isFixedHeader;
             },
@@ -61,7 +73,7 @@ export default {
                 this.$store.dispatch('app/setFixedHeader', val);
             }
         },
-        showBarLogo: {
+        showSideLogo: {
             get() {
                 return this.$store.getters.isSideLogo;
             },

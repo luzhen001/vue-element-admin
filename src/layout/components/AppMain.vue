@@ -22,18 +22,19 @@ export default {
 </script>
 <style lang="scss" scoped>
     .app-main {
-        min-height: calc(100vh - 50px);
         width: 100%;
-        position: relative;
         overflow: hidden;
+        position: relative;
+        // min-height: calc(100vh - 50px);
+        // border:1px solid red;
     }
     .fixed-header+.app-main {
         padding-top: 50px;
     }
     .hasTagsView {
-        .app-main {
-            min-height: calc(100vh - 94px);
-        }
+        // .app-main {
+        //     min-height: calc(100vh - 94px);
+        // }
         .fixed-header+.app-main {
             padding-top: 94px;
         }

@@ -2,12 +2,12 @@
     <div :class="classObj" class="app-wrapper">
         <div v-if="device==='mobile' && sidebar.opened" class="drawer-bg" @click="handleClickOutside"></div>
         <sidebar class="sidebar-container" />
-        <div :class="{hasTagsView:needTagsView}" class="main-container">
+        <div :class="{hasTagsView:needTagsView}" class="main-container" >
             <div :class="{'fixed-header':fixedHeader}">
                 <nav-bar />
                 <tags-view v-if="needTagsView" />
             </div>
-            <app-main style="border:1px solid red" />
+            <app-main />
         </div>
     </div>
 </template>
@@ -27,7 +27,8 @@ export default {
     computed: {
         ...mapState({
             sidebar: state => state.app.sidebar,
-            device: state => state.app.device
+            device: state => state.app.device,
+            showSideBar:state=>state.app.showSideBar
         }),
         fixedHeader(){
             return this.$store.getters.isFixedHeader;
@@ -65,13 +66,12 @@ export default {
         }
     }
     .drawer-bg {
-        background: #000;
-        opacity: 0.3;
         width: 100%;
-        top: 0;
         height: 100%;
+        top: 0;
         position: absolute;
         z-index: 999;
+        background: rgba(0,0,0,.3);
     }
     .fixed-header {
         position: fixed;
